@@ -2,10 +2,10 @@ var express = require('express');
 var app = express();
 //console.log("HellO World");
 
-app.get("/", (request, response) => response.sendFile(__dirname + "/view/index.html"));
+//app.get("/", (request, response) => response.sendFile(__dirname + "/view/index.html"));
 
 
-/*app.get(
+app.get(
     "/now",
     (req, res, next) => {
       req.time = new Date().toString();
@@ -16,7 +16,7 @@ app.get("/", (request, response) => response.sendFile(__dirname + "/view/index.h
         time: req.time
       });
     }
-  );*/
+  );
 
   
 
