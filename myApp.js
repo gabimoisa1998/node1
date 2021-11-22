@@ -4,7 +4,7 @@ var app = express();
 
 //app.get("/", (request, response) => response.sendFile(__dirname + "/public/style.css"));
 
-/*app.get(
+app.get(
     "/now",
     (req, res, next) => {
       req.time = new Date().toString();
@@ -15,13 +15,9 @@ var app = express();
         time: req.time
       });
     }
-  );*/
+  );
 
-  app.get('/:word/echo', function(req, res){
-    console.log(req.params.word)
-    })
-
-
+ 
 
 
 
