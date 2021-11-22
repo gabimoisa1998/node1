@@ -4,6 +4,7 @@ var app = express();
 
 //app.get("/", (request, response) => response.sendFile(__dirname + "/public/style.css"));
 
+
 app.get(
     "/now",
     (req, res, next) => {
@@ -17,7 +18,12 @@ app.get(
     }
   );
 
- 
+
+
+
+
+
+
 
 
 
