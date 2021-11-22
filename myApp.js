@@ -17,15 +17,9 @@ var app = express();
     }
   );*/
 
-  app.get('/:word/echo', (req, res) => {
-    let  word  = req.params.word
-    res.json({ "echo" : word })
-  })
-      
- 
-
-
-
+  app.get('/:word/echo', function(req, res){
+    console.log(req.params.word)
+    })
 
 
 
