@@ -5,7 +5,7 @@ var app = express();
 //app.get("/", (request, response) => response.sendFile(__dirname + "/view/index.html"));
 
 
-app.get(
+/*app.get(
     "/now",
     (req, res, next) => {
       req.time = new Date().toString();
@@ -16,7 +16,14 @@ app.get(
         time: req.time
       });
     }
-  );
+  );*/
+
+  app.get('/word/echo', (req, res)=>{
+      let word = req.params.word
+      res.json({"echo" : word})
+  })
+
+  
 
   
 
