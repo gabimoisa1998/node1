@@ -1,26 +1,11 @@
 var express = require('express');
 var app = express();
 
-
-
-
-  
-app.get("/json", (req, res) => {
-    res.json({
-      message: "Hello json"
-    });
+app.use(function middleware(req, res, next) {
+    // Do something
+    // Call the next function in line:
+    next();
   });
-
-  var response = "Hello json".toUpperCase();
-  if (process.env.MESSAGE_STYLE === "allCaps") {
-    response = "Hello json".toUpperCase();
-  } else {
-    response = "Hello json";
-  }
-
-
-
-
 
 
 
