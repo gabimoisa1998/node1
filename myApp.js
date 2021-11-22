@@ -1,11 +1,9 @@
 var express = require('express');
 var app = express();
 
-app.use(function middleware(req, res, next) {
-    console.log("I'm a middleware...");
-    next();
+app.get("/", function(req, res) {
+    res.sendFile(__dirname + "/view/index.html");
   });
-
 
 
 
